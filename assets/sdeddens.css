@@ -1,0 +1,25 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+#hero {
+	width: 150px;
+	height: 150px;
+}
+
+#welcome {
+	padding-top: 0px;
+	text-align: center;
+}
+
+#mobile::after {
+	content: " 281.300.3630";
+}
+
+#email::after {
+	content: " sdeddens@gmail.com";
+}
