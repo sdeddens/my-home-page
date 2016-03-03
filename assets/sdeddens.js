@@ -21,3 +21,6 @@ tgtElmt.html('Mobile: ' + m);
 // This injects the LinkedIn href into the html.. reason: I have more than one link and
 // I want to keep the reference in one place.
 $('.aLinkedIn').attr('href','https://www.linkedin.com/pub/stephen-deddens/6a/833/21');
+
+$('.future-1').attr('src','assets/future-1.jpg');
+$('.future-2').attr('src','assets/future-2.jpg');

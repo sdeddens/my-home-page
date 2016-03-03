@@ -18,3 +18,7 @@ body {
 	top: 8`px;
 	margin: auto;
 }
+
+.future-1, .future-2 {
+	margin-right: 10px;
+}
