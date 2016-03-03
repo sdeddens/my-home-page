@@ -16,11 +16,13 @@ body {
 	text-align: center;
 }
 
-#linkedin > img {
-	width: 160px;
-	height: 33px;
+#linkedIn > img {
 	border: 0px;
 	position: absolute;
-	top: 4px;
+	top: 8`px;
 	margin: auto;
+}
+
+.aLinkedIn {
+
 }

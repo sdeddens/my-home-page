@@ -17,3 +17,5 @@ tgtElmt.attr('href', 'tel:' + m);
 m =  '+1-281-';
 m += '300-3630';
 tgtElmt.html('Mobile: ' + m);
+
+$(.linkedIn).attr('href','https://www.linkedin.com/pub/stephen-deddens/6a/833/21');
