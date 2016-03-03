@@ -1,7 +1,7 @@
-// This code is retreaved and exacuted after the jQuary js files are loaded.
-// It is designed to defeat trolls from obtaining the email and phone number.
-// This is not really a concern.  It is included mostly to show that it can be done.
+// This code is retrieved and executed after the jQuary js files are loaded.
 
+// The following is designed to defeat trolls from obtaining the email and phone number.
+// This is not really a concern.  It is included mostly to show that it can be done.
 var m = 'sdeddens';
 m += '@gm';
 m += 'ail';
@@ -18,4 +18,6 @@ m =  '+1-281-';
 m += '300-3630';
 tgtElmt.html('Mobile: ' + m);
 
+// This injects the LinkedIn href into the html.. reason: I have more than one link and
+// I want to keep the reference in one place.
 $('.aLinkedIn').attr('href','https://www.linkedin.com/pub/stephen-deddens/6a/833/21');
