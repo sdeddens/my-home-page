@@ -26,6 +26,11 @@ $('.aLinkedIn').attr('href','https://www.linkedin.com/pub/stephen-deddens/6a/833
 $('.future-1').attr('src','assets/future-1.jpg');
 $('.future-2').attr('src','assets/future-2.jpg');
 
+// Scroll each vignette into view when it is expanded.
+// There has to be a way to refactor this, but for now, brute force will have to do.
+$('#v0').on('shown.bs.collapse', function() {
+	$('#v0').prev()[0].scrollIntoView();
+});
 $('#v1').on('shown.bs.collapse', function() {
 	$('#v1').prev()[0].scrollIntoView();
 });

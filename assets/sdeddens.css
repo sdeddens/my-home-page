@@ -33,14 +33,14 @@ body {
   margin-bottom:  5px;
 }
 
-.panel-heading .accordion-toggle:after {
+.panel-vignette .btn-vignette:after {
     /* symbol for "open" panels */
     font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
-    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+    content: "\e113";    /* adjust as needed, taken from bootstrap.css */
     float: right;        /* adjust as needed */
     color: grey;         /* adjust as needed */
 }
-.panel-heading .accordion-toggle.collapsed:after {
+.panel-vignette .btn-vignette.collapsed:after {
     /* symbol for "collapsed" panels */
     content: "\e114";    /* adjust as needed, taken from bootstrap.css */
 }
