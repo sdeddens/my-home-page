@@ -24,20 +24,23 @@ body {
 	padding-top: 5px;
 }
 
-.btn-local {
-  width:          270px;
+.panel-vignette {
+	display: inline-block;
+}
+
+.btn-vignette {
+  width:          300px;
   margin-bottom:  5px;
 }
 
-
 .panel-heading .accordion-toggle:after {
-    /* symbol for "opening" panels */
+    /* symbol for "open" panels */
     font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
-    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
     float: right;        /* adjust as needed */
     color: grey;         /* adjust as needed */
 }
 .panel-heading .accordion-toggle.collapsed:after {
     /* symbol for "collapsed" panels */
-    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
 }

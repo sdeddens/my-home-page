@@ -22,5 +22,10 @@ tgtElmt.html('Mobile: ' + m);
 // I want to keep the reference in one place.
 $('.aLinkedIn').attr('href','https://www.linkedin.com/pub/stephen-deddens/6a/833/21');
 
+// each line ensures both inline and modal instances reference the identical image.
 $('.future-1').attr('src','assets/future-1.jpg');
 $('.future-2').attr('src','assets/future-2.jpg');
+
+$('#v1').on('shown.bs.collapse', function() {
+	$('#v1').prev()[0].scrollIntoView();
+});
