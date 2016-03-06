@@ -45,7 +45,7 @@ body {
     content: "\e114";    /* down caret glypicon*/
 }
 
-/* google docs generated styles #v1 targets just the v1 vignette */
+/* google docs generated styles #v1 targets just the #v1 vignette */
 #v1 ol{margin:0;padding:0}
 #v1 table td,table th{padding:0}
 #v1 .c0{orphans:2;widows:2;height:11pt}
