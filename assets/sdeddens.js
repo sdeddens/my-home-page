@@ -34,3 +34,43 @@ $('#v0').on('shown.bs.collapse', function() {
 $('#v1').on('shown.bs.collapse', function() {
 	$('#v1').prev()[0].scrollIntoView();
 });
+$('#v2').on('shown.bs.collapse', function() {
+	$('#v2').prev()[0].scrollIntoView();
+});
+$('#v3').on('shown.bs.collapse', function() {
+	$('#v3').prev()[0].scrollIntoView();
+});
+$('#v4').on('shown.bs.collapse', function() {
+	$('#v4').prev()[0].scrollIntoView();
+});
+$('#v5').on('shown.bs.collapse', function() {
+	$('#v5').prev()[0].scrollIntoView();
+});
+$('#v6').on('shown.bs.collapse', function() {
+	$('#v6').prev()[0].scrollIntoView();
+});
+$('#v7').on('shown.bs.collapse', function() {
+	$('#v7').prev()[0].scrollIntoView();
+});
+$('#v8').on('shown.bs.collapse', function() {
+	$('#v8').prev()[0].scrollIntoView();
+});
+
+/* Save for later! */
+// jQuery(document).ready(function($) {
+
+//     // Fixa navbar ao ultrapassa-lo
+//     var navbar = $('#navbar-main'),
+//     		distance = navbar.offset().top,
+//         $window = $(window);
+
+//     $window.scroll(function() {
+//         if ($window.scrollTop() >= distance) {
+//             navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
+//           	$("body").css("padding-top", "70px");
+//         } else {
+//             navbar.removeClass('navbar-fixed-top');
+//             $("body").css("padding-top", "0px");
+//         }
+//     });
+// });

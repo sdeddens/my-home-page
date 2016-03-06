@@ -34,13 +34,34 @@ body {
 }
 
 .panel-vignette .btn-vignette:after {
-    /* symbol for "open" panels */
+    /* symbol for "expanded" panels */
     font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
-    content: "\e113";    /* adjust as needed, taken from bootstrap.css */
-    float: right;        /* adjust as needed */
-    color: grey;         /* adjust as needed */
+    content: "\e113";    /* up caret glyphicon */
+    float: right;
+    color: gray;
 }
 .panel-vignette .btn-vignette.collapsed:after {
     /* symbol for "collapsed" panels */
-    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    content: "\e114";    /* down caret glypicon*/
 }
+
+/* google docs generated styles #v1 targets just the v1 vignette */
+#v1 ol{margin:0;padding:0}
+#v1 table td,table th{padding:0}
+#v1 .c0{orphans:2;widows:2;height:11pt}
+#v1 .c1{orphans:2;widows:2}
+#v1 .c2{background-color:#fce5cd;max-width:612pt;padding:0pt 0pt 0pt 0pt}
+#v1 .c3{font-weight:bold}
+#v1 .c4{font-size:12pt}
+#v1 .c5{page-break-after:avoid;text-align:center}
+#v1 .title{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
+#v1 .subtitle{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
+#v1 li{color:#000000;font-size:11pt;font-family:"Arial"}
+#v1 p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}
+#v1 h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
+#v1 h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
+#v1 h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
+#v1 h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
+#v1 h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
+#v1 h6{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}
+
