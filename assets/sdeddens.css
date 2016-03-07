@@ -12,6 +12,10 @@ body {
 	text-align: center;
 }
 
+#contacts {
+	overflow: hidden;
+}
+
 #linkedIn > img {
 	border: 0px;
 	position: absolute;
