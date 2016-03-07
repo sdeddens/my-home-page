@@ -30,7 +30,6 @@ body {
 
 .btn-vignette {
   width:          300px;
-  margin-bottom:  5px;
 }
 
 .btn-vignette:after {
@@ -105,7 +104,10 @@ decided to import each docs selectors then target the respective vignette.*/
 .panel-vignette li{color:#000000;font-size:11pt;font-family:"Arial"}
 .panel-vignette p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}
 .panel-vignette h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
-.panel-vignette h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
+
+/*manual replacement of padding-top 18px with 0px */
+.panel-vignette h2{padding-top: 0pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
+
 .panel-vignette h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
 .panel-vignette h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
 .panel-vignette h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}
