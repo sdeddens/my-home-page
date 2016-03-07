@@ -19,7 +19,7 @@ body {
 #linkedIn > img {
 	border: 0px;
 	position: absolute;
-	top: 8`px;
+	top: 8px;
 	margin: auto;
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 .btn-vignette {
-  width:          300px;
+  width: 270px;
 }
 
 .btn-vignette:after {
