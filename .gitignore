@@ -1,4 +1,5 @@
 dist/*
+storage/*
 assets/*.pdf
 assets/*.jpg
 assets/*.png
