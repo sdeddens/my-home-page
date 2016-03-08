@@ -56,6 +56,7 @@ a .future-2 {
 
 .project-thumbnail {
 	margin-right: 10px;
+	border: 2px solid orange;
 }
 
 /*google docs generated styles, panel-vignette selects just the vignettes

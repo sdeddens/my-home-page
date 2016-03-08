@@ -59,6 +59,11 @@ $('#p0').on('shown.bs.collapse', function() {
 	$('#p0').prev()[0].scrollIntoView();
 });
 
+// remember to kill this entry when finished with working notice
+$('#px').on('shown.bs.collapse', function() {
+	$('#px').prev()[0].scrollIntoView();
+});
+
 /* Save for later! */
 // jQuery(document).ready(function($) {
 
