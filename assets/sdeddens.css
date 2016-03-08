@@ -59,15 +59,19 @@ a .future-2 {
 	border: 2px solid orange;
 }
 
-#play-the-game {
-	position: absolute;
-	top: 218px;
-	left: 185px
+.project-thumbnail-small {
+	height: 60px;
+	width: 60px;
 }
 
-#ga-logo {
-	position: sticky;
-	top: -10px;
+#play-the-game {
+	position: absolute;
+	top: 52px;
+	left: 166px
+}
+
+.set-position-relative {
+	position: relative;
 }
 
 /*google docs generated styles, panel-vignette selects just the vignettes

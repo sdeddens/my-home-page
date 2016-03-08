@@ -187,13 +187,18 @@
 <div class="container">
   <div class="row-fluid">
     <div class="col-xs-12 well panel-group" id="projects">
-      <h4>My Projects</h4>
+      <div>
+        <h4>My Projects
+          <img class="img-thumbnail project-thumbnail-small" src="assets/tic-tac-tow.png">
+        </h4>
+      </div>
       <p>This section contains summaries of several of my projects from <a href="https://generalassemb.ly/education/web-development-immersive" target='_blank'><img src="assets/GA.png"> General Assembly's Web Development Immersive</a> course that I just finished. They are listed in the order they were created starting with a simple tic-tac-toe game, progressing on to fully functioning Riby and NodeJS web applications. The last one is a discussion of the development of this web site.  The projects were typically week long group efforts.  Each summary describes the project’s objective, implementation dialog, a link to the final result, and a link to the the source code published on my GitHub page.</p>
 
       <div class="panel panel-default panel-project">
         <button class="btn btn-info btn-project collapsed" type="button" data-toggle="collapse" data-target="#p0" data-parent="#projects">Tic-Tac-Toe</button>
         <div id="p0" class="collapse panel-collapse">
-          <div class="panel-body">
+      <!-- empty div acts as an positioning element for following anchor  -->
+          <div class="panel-body" style="position: relative;">
             <img class="img-thumbnail project-thumbnail inline pull-left" src="assets/tic-tac-tow.png">
             <div id="play-the-game"><a href="http://www.sdeddens.com/projects/tic-tac-toe/" target="_blank">Play the game!</a></div>
             <p class="inline">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
