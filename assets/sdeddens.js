@@ -1,7 +1,7 @@
 // This code is retrieved and executed after the jQuary js files are loaded.
 
 // The following is designed to defeat trolls from obtaining the email and phone number.
-// This is not really a concern.  It is included mostly to show that it can be done.
+// This is not really a concern.  It is included mostly to show how it is done.
 var m = 'sdeddens';
 m += '@gm';
 m += 'ail';
@@ -54,6 +54,9 @@ $('#v7').on('shown.bs.collapse', function() {
 });
 $('#v8').on('shown.bs.collapse', function() {
 	$('#v8').prev()[0].scrollIntoView();
+});
+$('#p0').on('shown.bs.collapse', function() {
+	$('#p0').prev()[0].scrollIntoView();
 });
 
 /* Save for later! */

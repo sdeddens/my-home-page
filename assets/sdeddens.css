@@ -23,29 +23,39 @@ body {
 	margin: auto;
 }
 
-.future-1, .future-2 {
+a .future-1,
+a .future-2 {
 	margin-right: 10px;
-	padding-top: 5px;
+	padding-top:   5px;
 }
 
-.panel-vignette {
+.panel-vignette,
+.panel-project {
 	display: inline-block;
 }
 
-.btn-vignette {
+.btn-vignette,
+.btn-project {
   width: 270px;
 }
 
-.btn-vignette:after {
+.btn-vignette:after,
+.btn-project:after {
     /* symbol for "expanded" panels */
     font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
     content: "\e113";    /* up caret glyphicon */
     float: right;
     color: gray;
 }
-.btn-vignette.collapsed:after {
+
+.btn-vignette.collapsed:after,
+.btn-project.collapsed:after {
     /* symbol for "collapsed" panels */
     content: "\e114";    /* down caret glypicon*/
+}
+
+.project-thumbnail {
+	margin-right: 10px;
 }
 
 /*google docs generated styles, panel-vignette selects just the vignettes
