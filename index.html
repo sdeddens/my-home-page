@@ -58,11 +58,11 @@
 
       <p>But first... I want to share a couple of human interest images:</p>
 
-      <a href="#" data-toggle="modal" data-target="#modal-future-1"><img src="" width="40" class='pull-left img-rounded future-1' alt='Our Future' title="View Image"></a>
+      <a href="#" data-toggle="modal" data-target="#modal-future-1"><img src="" width="40" class='img-rounded future-1' alt='Our Future' title="View Image"></a>
 
-      <a href="#" data-toggle="modal" data-target="#modal-future-2"><img src="" width="40" class='pull-left img-rounded future-2' alt='Our Future' title="View Image"></a>
+      <a href="#" data-toggle="modal" data-target="#modal-future-2"><img src="" width="40" class='img-rounded future-2' alt='Our Future' title="View Image"></a>
 
-      <p>These two images show me interacting with a group of two-year-old boys whom I supervise on Sunday mornings while their parents are attending church services.  They are working a jigsaw puzzle on my handheld device.  What great fun it is working with these children that <em>are our future</em>. Notice the intense focus of attention these boys have! That's what makes these images so great.<br clear="left"></p>
+      <p>These two images show me interacting with a group of two-year-old boys whom I supervise on Sunday mornings while their parents are attending church services.  They are working a jigsaw puzzle on my handheld device.  What great fun it is working with these children that <em>are our future</em>. Notice the intense focus of attention these boys have! That's what makes these images so great.></p>
 
     </div>
   </div>
@@ -184,18 +184,39 @@
   <div class="row-fluid">
     <div class="col-xs-12 well panel-group" id="projects">
       <div>
-        <h4>My Projects <img data-toggle="collapse" data-target="#p0" data-parent="#projects" class="img-thumbnail project-thumbnail-small" src="assets/tic-tac-tow.png">
-        </h4>
+        <h4>My Projects</h4>
+        <img data-toggle="collapse" data-target="#thispage" data-parent="#projects" class="img-thumbnail project-thumbnail-small" src="assets/gears.png" alt="Building This Site">
+        <img data-toggle="collapse" data-target="#tictactoe" data-parent="#projects" class="img-thumbnail project-thumbnail-small" src="assets/tic-tac-tow.png" alt="Tic-Tac-Toe">
       </div>
-      <p>This section contains summaries of several of my projects from <a href="https://generalassemb.ly/education/web-development-immersive" target='_blank'><img src="assets/GA.png"> General Assembly's Web Development Immersive</a> course that I just finished. They are listed in the order they were created starting with a simple tic-tac-toe game, progressing on to fully functioning Riby and NodeJS web applications. The last one is a discussion of the development of this web site.  The projects were typically week long group efforts.  Each summary describes the project’s objective, implementation dialog, a link to the final result, and a link to the the source code published on my GitHub page.</p>
+      <div id="my-projects-dialog">
+        <p>This section contains summaries of several of my projects from <a href="https://generalassemb.ly/education/web-development-immersive" target='_blank'><img src="assets/GA.png"> General Assembly's Web Development Immersive</a> course that I just finished. Except for <em>Building This Page</em>, they are arranged in the order they were created starting with a simple tic-tac-toe game then progressing on to fully functioning Riby and NodeJS web applications. The projects were typically week long group efforts.  Each summary describes the project’s objective, implementation dialog, a link to the final result, and a link to the the source code published on my GitHub page.</p>
+      </div>
 
       <div class="panel panel-default panel-project">
-        <button class="btn btn-info btn-project collapsed" type="button" data-toggle="collapse" data-target="#p0" data-parent="#projects">Tic-Tac-Toe</button>
-        <div id="p0" class="collapse">
+        <button class="btn btn-info btn-project collapsed" type="button" data-toggle="collapse" data-target="#thispage" data-parent="#projects">Building This Site
+        </button>
+        <div id="thispage" class="collapse">
+          <div class="panel-body">
+            <img class="pull-left img-thumbnail project-thumbnail" src="assets/gears.png">
+            <div class= "set-position-relative">
+              <!-- Bootstrap set-position-relative helper class sets a position reference for #gears-attribution -->
+            <div id="gears-attribution"><a href="http://www.freepik.com" target="_blank">Image Background Designed by Freepik</a></div>
+            </div>
+
+            <p>For now this is just filler text.  The real text is being developed using Google Docs (Docs). Once the document is completed, I will use the Docs "Download As" feature to generate the html. From there it is a simple task to extract the &ltbody&gt section and drop it in here. The only caveat is the styling. Inserting more than one Google document creates class selector naming conflicts. The &ltstyle&gt is extracted from the &lthead&gt section and placed into this page's style sheet. Docs likes to use c1, c2, etc as class selector names. The problem is each one is unique to the current document.  The workaround is to encapsulate the html in a new class or id selector then convert, for example, the c1 reference in the style sheet to a decedent selector of the new selector, e.g. "#new c1". This is how I generated html the content for the vignettes and how I handled the styling.</p>
+            <p>The image to the left needs this attribution: <a href="http://www.freepik.com">Designed by Freepik</a> </p>
+
+          </div>
+        </div>
+      </div><!-- panel -->
+
+      <div class="panel panel-default panel-project">
+        <button class="btn btn-info btn-project collapsed" type="button" data-toggle="collapse" data-target="#tictactoe" data-parent="#projects">Tic-Tac-Toe</button>
+        <div id="tictactoe" class="collapse">
           <div class="panel-body">
             <img class="pull-left img-thumbnail project-thumbnail" src="assets/tic-tac-tow.png">
             <div class= "set-position-relative">
-              <!-- position-relative sets a position reference for #play-the-game -->
+              <!-- Bootstrap set-position-relative helper class sets a position reference for #play-the-game -->
             <div id="play-the-game"><a href="http://www.sdeddens.com/projects/tic-tac-toe/" target="_blank">Play the game!</a></div>
             </div>
             <p>This was the first project the students tackled. It was a solo endeavor. The object was to use the HTML and JavaScript skills learned during the early weeks of class to develop an app. The <a href="https://github.com/sdeddens/tic-tac-toe#readme" target="_blank">README</a> markdown file on GitHub covers the goals, technologies used, and the approach taken to achieve the projects goals. The list of technologies used is rather amazing. They formed the foundation for every project that followed. </p>

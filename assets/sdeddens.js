@@ -55,17 +55,11 @@ $('#v7').on('shown.bs.collapse', function() {
 $('#v8').on('shown.bs.collapse', function() {
 	$('#v8').prev()[0].scrollIntoView();
 });
-$('#p0').on('shown.bs.collapse', function() {
-	$('#p0').prev()[0].scrollIntoView();
+$('#thispage').on('shown.bs.collapse', function() {
+	$('#thispage').prev()[0].scrollIntoView();
 });
-$('#p1').on('shown.bs.collapse', function() {
-	$('#p1').prev()[0].scrollIntoView();
-});
-$('#p2').on('shown.bs.collapse', function() {
-	$('#p2').prev()[0].scrollIntoView();
-});
-$('#p3').on('shown.bs.collapse', function() {
-	$('#p3').prev()[0].scrollIntoView();
+$('#tictactoe').on('shown.bs.collapse', function() {
+	$('#tictactoe').prev()[0].scrollIntoView();
 });
 
 // remember to kill this entry when finished with working notice

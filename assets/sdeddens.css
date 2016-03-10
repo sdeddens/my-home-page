@@ -23,10 +23,12 @@ body {
 	margin: auto;
 }
 
-a .future-1,
-a .future-2 {
+.future-1,
+.future-2 {
+	margin-top:   5px;
 	margin-right: 10px;
-	padding-top:   5px;
+	float: left;
+	border: 2px solid maroon;
 }
 
 .panel-vignette,
@@ -60,14 +62,29 @@ a .future-2 {
 }
 
 .project-thumbnail-small {
+	border: 2px solid orange;
 	height: 80px;
 	width: 80px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+#my-projects-dialog {
+	clear: left;
 }
 
 #play-the-game {
 	position: absolute;
 	top: 36px;
 	left: 150px
+}
+
+#gears-attribution {
+	transform: rotate(-90deg);
+	position: absolute;
+	top: 122px;
+	left: -132px
 }
 
 .set-position-relative {
