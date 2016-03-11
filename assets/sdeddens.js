@@ -67,6 +67,16 @@ $('#px').on('shown.bs.collapse', function() {
 	$('#px').prev()[0].scrollIntoView();
 });
 
+// fix for mobile tool tips... found at: http://jsfiddle.net/xaAN3/
+$("abbr").click(function () {
+    var $title = $(this).find(".title");
+    if (!$title.length) {
+        $(this).append('<span class="title">' + $(this).attr("title") + '</span>');
+    } else {
+        $title.remove();
+    }
+});
+
 /* Save for later! */
 // jQuery(document).ready(function($) {
 

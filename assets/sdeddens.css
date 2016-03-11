@@ -59,6 +59,7 @@ body {
 .project-thumbnail {
 	margin-right: 10px;
 	border: 2px solid orange;
+	float: left;
 }
 
 .project-thumbnail-small {
@@ -86,12 +87,28 @@ body {
 	-webkit-transform: rotate(-90deg);
 	position: absolute;
 	top: 122px;
-	left: -132px
+	left: -116px
 }
 
 .set-position-relative {
 	position: relative;
 }
+
+abbr {
+  border-bottom: 1px dotted;
+  position: relative;
+}
+
+/*fix for mobile tool tips... found at: http://jsfiddle.net/xaAN3/*/
+abbr .title {
+    position: absolute;
+    top: 20px;
+    background: silver;
+    padding: 4px;
+    left: 0;
+    white-space: nowrap;
+}
+
 
 /*google docs generated styles, panel-vignette selects just the vignettes
 There are variences between .c? class selectors, rather than try to merge and consolidate,
