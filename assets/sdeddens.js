@@ -29,52 +29,60 @@ $('.future-2').attr('src','assets/future-2.jpg');
 // Scroll each vignette into view when it is expanded.
 // There has to be a way to refactor this, but for now, brute force will have to do.
 $('#v0').on('shown.bs.collapse', function() {
-	$('#v0').prev()[0].scrollIntoView();
+  $('#v0').prev()[0].scrollIntoView();
 });
 $('#v1').on('shown.bs.collapse', function() {
-	$('#v1').prev()[0].scrollIntoView();
+  $('#v1').prev()[0].scrollIntoView();
 });
 $('#v2').on('shown.bs.collapse', function() {
-	$('#v2').prev()[0].scrollIntoView();
+  $('#v2').prev()[0].scrollIntoView();
 });
 $('#v3').on('shown.bs.collapse', function() {
-	$('#v3').prev()[0].scrollIntoView();
+  $('#v3').prev()[0].scrollIntoView();
 });
 $('#v4').on('shown.bs.collapse', function() {
-	$('#v4').prev()[0].scrollIntoView();
+  $('#v4').prev()[0].scrollIntoView();
 });
 $('#v5').on('shown.bs.collapse', function() {
-	$('#v5').prev()[0].scrollIntoView();
+  $('#v5').prev()[0].scrollIntoView();
 });
 $('#v6').on('shown.bs.collapse', function() {
-	$('#v6').prev()[0].scrollIntoView();
+  $('#v6').prev()[0].scrollIntoView();
 });
 $('#v7').on('shown.bs.collapse', function() {
-	$('#v7').prev()[0].scrollIntoView();
+  $('#v7').prev()[0].scrollIntoView();
 });
 $('#v8').on('shown.bs.collapse', function() {
-	$('#v8').prev()[0].scrollIntoView();
+  $('#v8').prev()[0].scrollIntoView();
 });
 $('#thispage').on('shown.bs.collapse', function() {
-	$('#thispage').prev()[0].scrollIntoView();
+  $('#thispage').prev()[0].scrollIntoView();
 });
 $('#tictactoe').on('shown.bs.collapse', function() {
-	$('#tictactoe').prev()[0].scrollIntoView();
+  $('#tictactoe').prev()[0].scrollIntoView();
 });
 
 // remember to kill this entry when finished with working notice
 $('#px').on('shown.bs.collapse', function() {
-	$('#px').prev()[0].scrollIntoView();
+  $('#px').prev()[0].scrollIntoView();
 });
 
 // fix for mobile tool tips... found at: http://jsfiddle.net/xaAN3/
+// I added the timer.
+// Issue with content off screen when next to edge of screen.
 $("abbr").click(function () {
     var $title = $(this).find(".title");
+    console.log('titleLength: ',$title);
     if (!$title.length) {
         $(this).append('<span class="title">' + $(this).attr("title") + '</span>');
+        $title = $(this).find(".title");
+        setTimeout(function(){
+          $title.remove();
+          // if ($title.length){
+        }, 2000);
     } else {
         $title.remove();
-    }
+    };
 });
 
 /* Save for later! */
@@ -82,13 +90,13 @@ $("abbr").click(function () {
 
 //     // Fixa navbar ao ultrapassa-lo
 //     var navbar = $('#navbar-main'),
-//     		distance = navbar.offset().top,
+//        distance = navbar.offset().top,
 //         $window = $(window);
 
 //     $window.scroll(function() {
 //         if ($window.scrollTop() >= distance) {
 //             navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
-//           	$("body").css("padding-top", "70px");
+//            $("body").css("padding-top", "70px");
 //         } else {
 //             navbar.removeClass('navbar-fixed-top');
 //             $("body").css("padding-top", "0px");
