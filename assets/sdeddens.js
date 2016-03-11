@@ -78,7 +78,6 @@ $("abbr").click(function () {
         $title = $(this).find(".title");
         setTimeout(function(){
           $title.remove();
-          // if ($title.length){
         }, 2000);
     } else {
         $title.remove();
