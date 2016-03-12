@@ -3,37 +3,37 @@ body {
 }
 
 #hero {
-	width: 150px;
-	height: 150px;
+  width: 150px;
+  height: 150px;
 }
 
 #welcome {
-	padding-top: 0px;
-	text-align: center;
+  padding-top: 0px;
+  text-align: center;
 }
 
 #contacts {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 #linkedIn > img {
-	border: 0px;
-	position: absolute;
-	top: 8px;
-	margin: auto;
+  border: 0px;
+  position: absolute;
+  top: 8px;
+  margin: auto;
 }
 
 .future-1,
 .future-2 {
-	margin-top:   5px;
-	margin-right: 10px;
-	float: left;
-	border: 2px solid maroon;
+  margin-top:   5px;
+  margin-right: 10px;
+  float: left;
+  border: 2px solid maroon;
 }
 
 .panel-vignette,
 .panel-project {
-	display: inline-block;
+  display: inline-block;
 }
 
 .btn-vignette,
@@ -57,41 +57,41 @@ body {
 }
 
 .project-thumbnail {
-	margin-right: 10px;
-	border: 2px solid orange;
-	float: left;
+  margin-right: 10px;
+  border: 2px solid orange;
+  float: left;
 }
 
 .project-thumbnail-small {
-	border: 2px solid orange;
-	height: 80px;
-	width: 80px;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	float: left;
+  border: 2px solid orange;
+  height: 80px;
+  width: 80px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left;
 }
 
 #my-projects-dialog {
-	clear: left;
+  clear: left;
 }
 
 #play-the-game {
-	position: absolute;
-	top: 36px;
-	left: 150px
+  position: absolute;
+  top: 36px;
+  left: 150px
 }
 
 #gears-attribution {
-	transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-webkit-transform: rotate(-90deg);
-	position: absolute;
-	top: 122px;
-	left: -116px
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  position: absolute;
+  top: 122px;
+  left: -116px
 }
 
 .set-position-relative {
-	position: relative;
+  position: relative;
 }
 
 abbr {
@@ -162,6 +162,15 @@ decided to import each docs selectors then target the respective vignette.*/
 #v8 .c1{orphans:2;widows:2}
 #v8 .c2{page-break-after:avoid;text-align:center}
 #v8 .c3{background-color:#fce5cd;max-width:612pt;padding:0pt 0pt 0pt 0pt}
+
+#v9 .c0{color:inherit;text-decoration:inherit}
+#v9 .c1{font-style:italic}
+#v9 .c2{orphans:2;widows:2;height:11pt}
+#v9 .c3{page-break-after:avoid;orphans:2;widows:2;text-align:center}
+#v9 .c4{vertical-align:super;font-size:8pt}
+#v9 .c5{orphans:2;widows:2}
+#v9 .c6{color:#1155cc;text-decoration:underline}
+#v9 .c7{background-color:#fce5cd;max-width:612pt;padding:0pt 0pt 0pt 0pt}
 
 .panel-vignette ol{margin:0;padding:0}
 .panel-vignette table td,table th{padding:0}
