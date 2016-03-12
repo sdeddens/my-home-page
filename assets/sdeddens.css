@@ -163,14 +163,14 @@ decided to import each docs selectors then target the respective vignette.*/
 #v8 .c2{page-break-after:avoid;text-align:center}
 #v8 .c3{background-color:#fce5cd;max-width:612pt;padding:0pt 0pt 0pt 0pt}
 
-#v9 .c0{color:inherit;text-decoration:inherit}
-#v9 .c1{font-style:italic}
-#v9 .c2{orphans:2;widows:2;height:11pt}
-#v9 .c3{page-break-after:avoid;orphans:2;widows:2;text-align:center}
-#v9 .c4{vertical-align:super;font-size:8pt}
-#v9 .c5{orphans:2;widows:2}
-#v9 .c6{color:#1155cc;text-decoration:underline}
-#v9 .c7{background-color:#fce5cd;max-width:612pt;padding:0pt 0pt 0pt 0pt}
+#v9 .c0{orphans:2;widows:2;height:11pt}
+#v9 .c1{color:#1155cc;text-decoration:underline}
+#v9 .c2{orphans:2;widows:2}
+#v9 .c3{color:inherit;text-decoration:inherit}
+#v9 .c4{font-style:italic}
+#v9 .c5{page-break-after:avoid;text-align:center}
+#v9 .c6{background-color:#fce5cd;max-width:612pt;padding:0pt 0pt 0pt 0pt}
+#v9 .c7{vertical-align:super;font-size:8pt}
 
 .panel-vignette ol{margin:0;padding:0}
 .panel-vignette table td,table th{padding:0}
