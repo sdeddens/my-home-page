@@ -55,6 +55,9 @@ $('#v7').on('shown.bs.collapse', function() {
 $('#v8').on('shown.bs.collapse', function() {
   $('#v8').prev()[0].scrollIntoView();
 });
+$('#v9').on('shown.bs.collapse', function() {
+  $('#v9').prev()[0].scrollIntoView();
+});
 $('#thispage').on('shown.bs.collapse', function() {
   $('#thispage').prev()[0].scrollIntoView();
 });
