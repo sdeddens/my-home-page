@@ -103,7 +103,7 @@ abbr {
 abbr .title {
     position: absolute;
     top: 20px;
-    background: silver;
+    background: #F7D358;
     padding: 4px;
     left: 0;
     white-space: nowrap;

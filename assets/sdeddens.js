@@ -77,6 +77,7 @@ $("abbr").click(function () {
         $(this).append('<span class="title">' + $(this).attr("title") + '</span>');
         $title = $(this).find(".title");
         setTimeout(function(){
+          // note: If already removed by second click.. jQuery cleans up the mess.
           $title.remove();
         }, 2000);
     } else {
