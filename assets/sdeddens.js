@@ -70,21 +70,22 @@ $('#px').on('shown.bs.collapse', function() {
   $('#px').prev()[0].scrollIntoView();
 });
 
-// fix for mobile tool tips... found at: http://jsfiddle.net/xaAN3/
-// I added the timer.
-// Issue with content off screen when next to edge of screen.
+// workaround for no mobile ":hover / tool tips" functionality... found at: http://jsfiddle.net/xaAN3/
+// I added the conditional left offset and the setTimeout.
 $("abbr").click(function () {
     var $title = $(this).find(".title");
-    console.log('titleLength: ',$title);
     if (!$title.length) {
-        $(this).append('<span class="title">' + $(this).attr("title") + '</span>');
-        $title = $(this).find(".title");
-        setTimeout(function(){
-          // note: If already removed by second click.. jQuery cleans up the mess.
-          $title.remove();
-        }, 2000);
-    } else {
+      $(this).append('<span class="title">' + $(this).attr("title") + '</span>');
+      $title = $(this).find(".title");
+      var overlap = $title.offset().left + $title.width() +10 - $(document).width();
+      if (overlap > 0) $title.offset({ left: ($title.offset().left - overlap)});
+      setTimeout(function(){
+        // note: If already removed by second click... jQuery will clean up the mess.
         $title.remove();
+      }, 2000);
+    }
+    else {
+      $title.remove();
     };
 });
 
