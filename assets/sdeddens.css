@@ -71,7 +71,7 @@ body {
   float: left;
 }
 
-#my-projects-dialog {
+.clear-left {
   clear: left;
 }
 
@@ -109,6 +109,14 @@ abbr .title {
     white-space: nowrap;
 }
 
+/*this guy sets the minimum width a paragraph will shrink to and still float around
+a floated element eg, img.*/
+p:before {
+  content: "";
+  width: 200px;
+  display: block;
+  overflow: hidden;
+}
 
 /*google docs generated styles, panel-vignette selects just the vignettes
 There are variences between .c? class selectors, rather than try to merge and consolidate,
