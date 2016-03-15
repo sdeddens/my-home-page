@@ -57,8 +57,9 @@ body {
 }
 
 .project-thumbnail {
-  margin-right: 10px;
   border: 2px solid orange;
+  margin-right: 10px;
+  margin-bottom: 10px;
   float: left;
 }
 
@@ -94,24 +95,22 @@ body {
   position: relative;
 }
 
+/*This plus $("abbr").click function gives us a hack for mobile tool tips... found at: http://jsfiddle.net/xaAN3/*/
 abbr {
   border-bottom: 1px dotted;
   position: relative;
 }
-
-/*fix for mobile tool tips... found at: http://jsfiddle.net/xaAN3/*/
 abbr .title {
-    position: absolute;
-    top: 20px;
-    background: #F7D358;
-    padding: 4px;
-    left: 0;
-    white-space: nowrap;
+  position: absolute;
+  top: 20px;
+  background: #F7D358;
+  padding: 4px;
+  left: 0;
+  white-space: nowrap;
 }
 
-/*this guy sets the minimum width a paragraph will shrink to and still float around
-a floated element eg, img.*/
-p:before {
+/*This guy sets the width at which an element will, effectivly, clear a float*/
+.set-min-squeeze:before {
   content: "";
   width: 200px;
   display: block;
@@ -120,7 +119,7 @@ p:before {
 
 /*google docs generated styles, panel-vignette selects just the vignettes
 There are variences between .c? class selectors, rather than try to merge and consolidate,
-decided to import each docs selectors then target the respective vignette.*/
+decided to import each doc's selectors, then target the respective vignette.*/
 #v0 .c0{orphans:2;widows:2}
 #v0 .c1{height:11pt}
 #v0 .c2{background-color:#fce5cd;max-width:612pt;padding:0pt 0pt 0pt 0pt}
