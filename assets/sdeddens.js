@@ -66,29 +66,71 @@ $('#tictactoe').on('shown.bs.collapse', function() {
 });
 
 // animated link
-var $playTheGame = $('#play-the-game');
+var redLight = null;
+var signalLightClickEnabled = null;
 var $stopGo = $('#stop-go');
+var $playTheGame = $('#play-the-game');
 var originalSize = $playTheGame.css('fontSize');
-var resetFontFlasher = null;
-var changeFontFlasher = setInterval(function(){
-  $playTheGame.animate({fontSize: "5px"}, 1000);
-  $stopGo.css("opacity", .4);
-}, 2000);
-setTimeout(function(){
-  resetFontFlasher = setInterval(function(){
+var downAnimationTimer = null;
+var upAnimationTimer = null;
+var upAnimationDelay1 = null;
+var upAnimationDelay2 = null;
+
+var upTransition = function(){
     $playTheGame.animate({fontSize: originalSize}, 1000);
     $stopGo.css("opacity", 1.0);
+  };
+var downTransition = function(){
+    $playTheGame.animate({fontSize: "5px"}, 1000);
+    $stopGo.css("opacity", .4);
+  };
+
+var startStopGo = function(){
+  $stopGo.css("background", "firebrick");
+  redLight = true;
+  signalLightClickEnabled = true;
+
+  // t=0s: start down transition asap
+  downTransition();
+
+  // t=1s: start up transition after down transition is complete
+  upAnimationDelay1 = setTimeout(function(){
+    upTransition();
+  }, 1000);
+
+  // t=2s: start down animation after first transition cycle
+  downAnimationTimer = setInterval(function(){
+    downTransition();
   }, 2000);
-},1000)
+
+  // t=3s: start up animation half way into up animation cycle
+  upAnimationDelay2 = setTimeout(function(){
+    upAnimationTimer = setInterval(function(){
+      upTransition();
+    }, 2000);
+  },1000);
+};
+
+startStopGo();
 
 $stopGo.click(function(){
-  clearInterval(changeFontFlasher);
-  clearInterval(resetFontFlasher);
-  setTimeout(function(){
-    $playTheGame.css({'fontSize':originalSize});
-    $stopGo.css("opacity", 1.0);
-    $stopGo.css("background", "green");
-  }, 1000);
+  if (!signalLightClickEnabled) return;
+  if (redLight) {
+    signalLightClickEnabled = false;
+    clearTimeout(upAnimationDelay1);
+    clearTimeout(upAnimationDelay2);
+    clearInterval(downAnimationTimer);
+    clearInterval(upAnimationTimer);
+    setTimeout(function(){
+      $playTheGame.css({'fontSize':originalSize});
+      $stopGo.css("opacity", 1.0);
+      $stopGo.css("background", "green");
+      redLight = false;
+      signalLightClickEnabled = true;
+    }, 1000);
+  } else {
+    startStopGo();
+  };
 });
 
 // workaround for no mobile ":hover / tool tips" functionality... found at: http://jsfiddle.net/xaAN3/
