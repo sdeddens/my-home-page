@@ -79,7 +79,7 @@ body {
 #play-the-game {
   position: absolute;
   top: 36px;
-  left: 150px
+  left: 150px;
 }
 
 #stop-go {
@@ -93,13 +93,20 @@ body {
   transition: opacity .8s linear .2s;
 }
 
+#toggle-animation {
+  position: absolute;
+  top: 4px;
+  left: 150px;
+  font-size: 10px;
+}
+
 #gears-attribution {
   transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   position: absolute;
   top: 122px;
-  left: -116px
+  left: -116px;
 }
 
 .set-position-relative {

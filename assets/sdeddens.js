@@ -122,9 +122,9 @@ $stopGo.click(function(){
     clearInterval(downAnimationTimer);
     clearInterval(upAnimationTimer);
     setTimeout(function(){
-      $playTheGame.css({'fontSize':originalSize});
       $stopGo.css("opacity", 1.0);
       $stopGo.css("background", "green");
+      upTransition();
       redLight = false;
       signalLightClickEnabled = true;
     }, 1000);
