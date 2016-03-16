@@ -65,9 +65,30 @@ $('#tictactoe').on('shown.bs.collapse', function() {
   $('#tictactoe').prev()[0].scrollIntoView();
 });
 
-// remember to kill this entry when finished with working notice
-$('#px').on('shown.bs.collapse', function() {
-  $('#px').prev()[0].scrollIntoView();
+// animated link
+var $playTheGame = $('#play-the-game');
+var $stopGo = $('#stop-go');
+var originalSize = $playTheGame.css('fontSize');
+var resetFontFlasher = null;
+var changeFontFlasher = setInterval(function(){
+  $playTheGame.animate({fontSize: "5px"}, 1000);
+  $stopGo.css("opacity", .4);
+}, 2000);
+setTimeout(function(){
+  resetFontFlasher = setInterval(function(){
+    $playTheGame.animate({fontSize: originalSize}, 1000);
+    $stopGo.css("opacity", 1.0);
+  }, 2000);
+},1000)
+
+$stopGo.click(function(){
+  clearInterval(changeFontFlasher);
+  clearInterval(resetFontFlasher);
+  setTimeout(function(){
+    $playTheGame.css({'fontSize':originalSize});
+    $stopGo.css("opacity", 1.0);
+    $stopGo.css("background", "green");
+  }, 1000);
 });
 
 // workaround for no mobile ":hover / tool tips" functionality... found at: http://jsfiddle.net/xaAN3/

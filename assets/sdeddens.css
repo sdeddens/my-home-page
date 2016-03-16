@@ -82,6 +82,17 @@ body {
   left: 150px
 }
 
+#stop-go {
+  position: absolute;
+  top: 8px;
+  left: 239px;
+  background: firebrick;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: opacity .8s linear .2s;
+}
+
 #gears-attribution {
   transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
