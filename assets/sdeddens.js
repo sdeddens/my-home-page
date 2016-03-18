@@ -119,13 +119,12 @@ $stopGo.click(function(){
     signalLightClickEnabled = false;
     clearTimeout(upAnimationDelay1);
     clearTimeout(upAnimationDelay2);
-    clearInterval(downAnimationTimer);
     clearInterval(upAnimationTimer);
+    clearInterval(downAnimationTimer);
+    $stopGo.css("background", "green");
+    redLight = false;
+    upTransition();
     setTimeout(function(){
-      $stopGo.css("opacity", 1.0);
-      $stopGo.css("background", "green");
-      upTransition();
-      redLight = false;
       signalLightClickEnabled = true;
     }, 1000);
   } else {

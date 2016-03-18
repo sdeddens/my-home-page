@@ -113,7 +113,9 @@ body {
   position: relative;
 }
 
-/*This plus $("abbr").click function gives us a hack for mobile tool tips... found at: http://jsfiddle.net/xaAN3/*/
+/*This plus javaScript $("abbr").click function
+  gives us a hack for mobile tool tips...
+  found at: http://jsfiddle.net/xaAN3/*/
 abbr {
   border-bottom: 1px dotted;
   position: relative;
@@ -127,7 +129,10 @@ abbr .title {
   white-space: nowrap;
 }
 
-/*This guy sets the width at which an element will, effectivly, clear a float*/
+/*This guy sets the width at which an element will, effectively, clear a float.
+  It literately sticks a 200px wide, 0px high, block level, invisible "whisker"
+  (element) in front of an element.  If the whisker can't fit, then it, and all
+  behind it, are positioned below the floated object. Viola! */
 .set-min-squeeze:before {
   content: "";
   width: 200px;
@@ -136,7 +141,7 @@ abbr .title {
 }
 
 /*google docs generated styles, panel-vignette selects just the vignettes
-There are variences between .c? class selectors, rather than try to merge and consolidate,
+There are variances between .c? class selectors, rather than try to merge and consolidate,
 decided to import each doc's selectors, then target the respective vignette.*/
 #v0 .c0{orphans:2;widows:2}
 #v0 .c1{height:11pt}
