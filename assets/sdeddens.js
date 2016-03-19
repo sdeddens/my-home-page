@@ -58,11 +58,17 @@ $('#v8').on('shown.bs.collapse', function() {
 $('#v9').on('shown.bs.collapse', function() {
   $('#v9').prev()[0].scrollIntoView();
 });
+$('#v10').on('shown.bs.collapse', function() {
+  $('#v10').prev()[0].scrollIntoView();
+});
 $('#thispage').on('shown.bs.collapse', function() {
   $('#thispage').prev()[0].scrollIntoView();
 });
 $('#tictactoe').on('shown.bs.collapse', function() {
   $('#tictactoe').prev()[0].scrollIntoView();
+});
+$('#px').on('shown.bs.collapse', function() {
+  $('#px').prev()[0].scrollIntoView();
 });
 
 // animated link
