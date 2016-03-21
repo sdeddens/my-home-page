@@ -92,10 +92,10 @@ $stopGo.click(function(){
     clearTimeout(upAnimationDelay2);
     clearInterval(upAnimationTimer);
     clearInterval(downAnimationTimer);
-    $stopGo.css("background", "green");
     redLight = false;
     upTransition();
     setTimeout(function(){
+      $stopGo.css("background", "green");
       signalLightClickEnabled = true;
     }, 1000);
   } else {
