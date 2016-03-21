@@ -27,48 +27,8 @@ $('.future-1').attr('src','assets/future-1.jpg');
 $('.future-2').attr('src','assets/future-2.jpg');
 
 // Scroll each vignette into view when it is expanded.
-// There has to be a way to refactor this, but for now, brute force will have to do.
-$('#v0').on('shown.bs.collapse', function() {
-  $('#v0').prev()[0].scrollIntoView();
-});
-$('#v1').on('shown.bs.collapse', function() {
-  $('#v1').prev()[0].scrollIntoView();
-});
-$('#v2').on('shown.bs.collapse', function() {
-  $('#v2').prev()[0].scrollIntoView();
-});
-$('#v3').on('shown.bs.collapse', function() {
-  $('#v3').prev()[0].scrollIntoView();
-});
-$('#v4').on('shown.bs.collapse', function() {
-  $('#v4').prev()[0].scrollIntoView();
-});
-$('#v5').on('shown.bs.collapse', function() {
-  $('#v5').prev()[0].scrollIntoView();
-});
-$('#v6').on('shown.bs.collapse', function() {
-  $('#v6').prev()[0].scrollIntoView();
-});
-$('#v7').on('shown.bs.collapse', function() {
-  $('#v7').prev()[0].scrollIntoView();
-});
-$('#v8').on('shown.bs.collapse', function() {
-  $('#v8').prev()[0].scrollIntoView();
-});
-$('#v9').on('shown.bs.collapse', function() {
-  $('#v9').prev()[0].scrollIntoView();
-});
-$('#v10').on('shown.bs.collapse', function() {
-  $('#v10').prev()[0].scrollIntoView();
-});
-$('#thispage').on('shown.bs.collapse', function() {
-  $('#thispage').prev()[0].scrollIntoView();
-});
-$('#tictactoe').on('shown.bs.collapse', function() {
-  $('#tictactoe').prev()[0].scrollIntoView();
-});
-$('#px').on('shown.bs.collapse', function() {
-  $('#px').prev()[0].scrollIntoView();
+$('.scroll-me').on('shown.bs.collapse', function() {
+  $('.scroll-me').prev()[0].scrollIntoView();
 });
 
 // animated link
