@@ -26,9 +26,14 @@ $('.aLinkedIn').attr('href','https://www.linkedin.com/pub/stephen-deddens/6a/833
 $('.future-1').attr('src','assets/future-1.jpg');
 $('.future-2').attr('src','assets/future-2.jpg');
 
-// Scroll each vignette into view when it is expanded.
+// note: Bootstrap data-parent [attribute /.panel-group] accordion association breaks
+// across .well class, so, to make sure any open panel in other .well collapses, we do ourself.
+$('.scroll-me').on('show.bs.collapse', function() {
+  $(".in").not(this).collapse('hide');
+});
+// Scroll each panel into view when it is expanded.
 $('.scroll-me').on('shown.bs.collapse', function() {
-  $('.scroll-me').prev()[0].scrollIntoView();
+  $(this).prev()[0].scrollIntoView();
 });
 
 // animated link
