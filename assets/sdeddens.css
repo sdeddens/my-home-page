@@ -41,13 +41,23 @@ body {
   width: 270px;
 }
 
+
 .btn-vignette:after,
-.btn-project:after {
+.btn-project:after,
+.btn-floater:after {
     /* symbol for "expanded" panels */
     font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
     content: "\e113";    /* up caret glyphicon */
     float: right;
     color: gray;
+}
+
+.btn-floater {
+  position: fixed;
+  bottom: 0px;
+  right: 40px;
+  width: 40px;
+  z-index: 1;
 }
 
 .btn-vignette.collapsed:after,

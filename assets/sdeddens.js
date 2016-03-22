@@ -34,6 +34,13 @@ $('.scroll-me').on('show.bs.collapse', function() {
 // Scroll each panel into view when it is expanded.
 $('.scroll-me').on('shown.bs.collapse', function() {
   $(this).prev()[0].scrollIntoView();
+  $('.btn-floater').show();
+});
+
+$('.btn-floater').hide();
+$('.btn-floater').click(function() {
+  $(this).hide();
+  $(".in").collapse('hide');
 });
 
 // animated link
