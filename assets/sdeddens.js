@@ -26,22 +26,34 @@ $('.aLinkedIn').attr('href','https://www.linkedin.com/pub/stephen-deddens/6a/833
 $('.future-1').attr('src','assets/future-1.jpg');
 $('.future-2').attr('src','assets/future-2.jpg');
 
+
+
+// On initialization, hide the btn-floater
+$('.btn-floater').hide();
+
 // note: Bootstrap data-parent [attribute /.panel-group] accordion association breaks
 // across .well class, so, to make sure any open panel in other .well collapses, we do ourself.
 $('.scroll-me').on('show.bs.collapse', function() {
   $(".in").not(this).collapse('hide');
 });
-// Scroll each panel into view when it is expanded.
+
+// Scroll each panel into view once it is expanded.
+// Then show the btn-floater.
 $('.scroll-me').on('shown.bs.collapse', function() {
   $(this).prev()[0].scrollIntoView();
   $('.btn-floater').show();
 });
 
-$('.btn-floater').hide();
+// A click on btn-floater close the open panel.
 $('.btn-floater').click(function() {
-  $(this).hide();
   $(".in").collapse('hide');
 });
+
+// When any panel starts to collapse, hide the btn-floater.
+$('.scroll-me').on('hide.bs.collapse', function() {
+  $('.btn-floater').hide();
+});
+
 
 // animated link
 var redLight = null;
