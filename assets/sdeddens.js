@@ -31,8 +31,12 @@ $('.future-2').attr('src','assets/future-2.jpg');
 // On initialization, hide the btn-floater
 $('.btn-floater').hide();
 
-// note: Bootstrap data-parent [attribute /.panel-group] accordion association breaks
-// across .well class, so, to make sure any open panel in other .well collapses, we do ourself.
+// note: Bootstrap data-parent [attribute /.panel-group] accordion association breaks across
+// .well class, so, to make sure any open panel in the other ".well" collapses, we do ourself.
+// Note: thus, we could eliminate the .panel, date-target and data-parent functionality of the
+// Bootstrap collapse plug-in, but I left them in for two reasons:
+// first, to show how they are constructed,
+// and second, they have some kind of easing function that softens the show/collapse animation.
 $('.scroll-me').on('show.bs.collapse', function() {
   $(".in").not(this).collapse('hide');
 });
@@ -44,7 +48,7 @@ $('.scroll-me').on('shown.bs.collapse', function() {
   $('.btn-floater').show();
 });
 
-// A click on btn-floater close the open panel.
+// A click on btn-floater closes any open panel.
 $('.btn-floater').click(function() {
   $(".in").collapse('hide');
 });
