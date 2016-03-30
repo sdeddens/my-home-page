@@ -39,8 +39,13 @@ body {
 .btn-vignette,
 .btn-project {
   width: 270px;
+  text-align: left;
+  /*following is a patch to keep firefox from inserting an unexpected linebreak
+    when adding the up-down glyphicon */
+  white-space: normal;
+  background-color: blue;
+  color: white;
 }
-
 
 .btn-vignette:after,
 .btn-project:after,
@@ -49,7 +54,7 @@ body {
     font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
     content: "\e113";    /* up caret glyphicon */
     float: right;
-    color: gray;
+    color: white;
 }
 
 .btn-floater {

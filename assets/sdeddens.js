@@ -58,6 +58,11 @@ $('.scroll-me').on('hide.bs.collapse', function() {
   $('.btn-floater').hide();
 });
 
+// When remove the focus from a button after it collapses.
+$('.scroll-me').on('hidden.bs.collapse', function() {
+  $(this).prev()[0].blur();
+});
+
 
 // animated link
 var redLight = null;
