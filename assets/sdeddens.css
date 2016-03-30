@@ -23,11 +23,9 @@ body {
   margin: auto;
 }
 
-.future-1,
-.future-2 {
+.powerbids-1 {
   margin-top:   5px;
   margin-right: 10px;
-  float: left;
   border: 2px solid maroon;
 }
 

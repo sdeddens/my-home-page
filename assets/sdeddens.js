@@ -22,11 +22,8 @@ tgtElmt.html('Mobile: ' + m);
 // I want to keep the reference in one place.
 $('.aLinkedIn').attr('href','https://www.linkedin.com/pub/stephen-deddens/6a/833/21');
 
-// each line ensures both inline and modal instances reference the identical image.
-$('.future-1').attr('src','assets/future-1.jpg');
-$('.future-2').attr('src','assets/future-2.jpg');
-
-
+// eEnsures both inline and modal instances reference the identical image.
+$('.powerbids-1').attr('src','assets/PowerBids_Screenshot.png');
 
 // On initialization, hide the btn-floater
 $('.btn-floater').hide();
@@ -149,22 +146,3 @@ $("abbr").click(function () {
       $title.remove();
     };
 });
-
-/* Save for later! */
-// jQuery(document).ready(function($) {
-
-//     // Fixa navbar ao ultrapassa-lo
-//     var navbar = $('#navbar-main'),
-//        distance = navbar.offset().top,
-//         $window = $(window);
-
-//     $window.scroll(function() {
-//         if ($window.scrollTop() >= distance) {
-//             navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
-//            $("body").css("padding-top", "70px");
-//         } else {
-//             navbar.removeClass('navbar-fixed-top');
-//             $("body").css("padding-top", "0px");
-//         }
-//     });
-// });
