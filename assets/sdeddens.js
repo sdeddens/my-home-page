@@ -147,6 +147,8 @@ $("abbr").click(function () {
     };
 });
 
+// allows linking, and scrolling, to id inside collapsed div
+// eg, sdeddens.com/index.heml#testimonials
 window.onload = function () {
   var hash = window.location.hash;
   if (hash != "") {
@@ -156,6 +158,8 @@ window.onload = function () {
       closest.collapse('show');
       closest.on('shown.bs.collapse', function () {
         hashTgt[0].scrollIntoView(true);
+        // Then unplug the hook. Is a kludge, but works!
+        hashTgt = null;
       });
     };
   };
