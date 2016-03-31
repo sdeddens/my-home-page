@@ -149,7 +149,7 @@ $("abbr").click(function () {
 
 // allows linking, and scrolling, to id inside collapsed div
 // eg, sdeddens.com/index.heml#testimonials
-window.onload = function () {
+$(function () {
   var hash = window.location.hash;
   if (hash != "") {
     var hashTgt = $(hash);
@@ -163,4 +163,4 @@ window.onload = function () {
       });
     };
   };
-};
+});
