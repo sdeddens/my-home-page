@@ -146,3 +146,17 @@ $("abbr").click(function () {
       $title.remove();
     };
 });
+
+window.onload = function () {
+  var hash = window.location.hash;
+  if (hash != "") {
+    var hashTgt = $(hash);
+    var closest = hashTgt.closest(".scroll-me");
+    if (closest.length) {
+      closest.collapse('show');
+      closest.on('shown.bs.collapse', function () {
+        hashTgt[0].scrollIntoView(true);
+      });
+    };
+  };
+};
